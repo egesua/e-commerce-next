@@ -2,7 +2,7 @@ import React from 'react'
 
 const User = () => {
   return (
-    <div>
+    <div className='hidden md:flex'>
       User
     </div>
   )
