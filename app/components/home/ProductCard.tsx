@@ -1,8 +1,11 @@
+import Image from "next/image";
 
-const ProductCard = () => {
+const ProductCard = ({product}: {product: any}) => {
   return (
-    <div>
-      
+    <div className="w-[240px] shadow-lg p-2">
+      <div className="relative h-[170px]">
+        <Image src={product.image} fill alt="" className="object-contain" />
+      </div>
     </div>
   )
 }
